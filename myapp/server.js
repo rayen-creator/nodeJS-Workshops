@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 
 
 //routes
-require('./routes/os')(app);
+require('./routes/routes')(app);
 
 const PORT=3000
 app.listen(PORT, () => {
