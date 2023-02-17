@@ -5,6 +5,9 @@ const colors=require('colors');
 //db config
 const mongodbconnection =require('./config/db');
 
+const morgan=require('morgan');
+//log
+app.use(morgan('dev'));
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
