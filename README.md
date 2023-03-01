@@ -1,7 +1,7 @@
 
-# Nodjs workshops
+# Nodejs workshops
 
-express js apps in one repo 
+expressjs apps in one repo 
 
 ## Usage
 
