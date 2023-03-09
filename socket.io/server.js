@@ -15,4 +15,9 @@ const io=require('socket.io')(server);
 
 io.on("connection",(socket)=>{
     console.log("New user connected");
-})
+    io.emit('msg','a new user has been connected !');
+
+    socket.on('disconnect',()=>{
+        console.log("User disconnected");
+    });
+});
